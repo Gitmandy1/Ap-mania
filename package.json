@@ -1,0 +1,29 @@
+{
+  "name": "lifevault",
+  "version": "0.1.0",
+  "description": "Digital Estate Planning & Family Information Manager",
+  "main": "backend/server.js",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "mobile"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm install --workspace=backend && npm install --workspace=mobile",
+    "dev": "npm run dev --workspace=backend",
+    "mobile": "npm start --workspace=mobile",
+    "test": "npm test --workspace=backend",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "keywords": [
+    "estate-planning",
+    "digital-legacy",
+    "family-information",
+    "secure-storage"
+  ],
+  "author": "LifeVault Team",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  }
+}
